@@ -57,4 +57,4 @@ if __name__ == "__main__":
 
     pprint(f"{inputs=}")
 
-    results = RecamCrew(pdf_path=args.input_pdf).crew().kickoff(inputs=inputs)
+    results = RecamCrew().crew().kickoff(inputs=inputs)
