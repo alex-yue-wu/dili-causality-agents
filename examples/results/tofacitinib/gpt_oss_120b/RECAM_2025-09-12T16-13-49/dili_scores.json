@@ -1,0 +1,29 @@
+{
+  "drug_name": "tofacitinib",
+  "recam_score": {
+    "domain1": 0,
+    "domain2": 0,
+    "domain3": 0,
+    "domain4": 0,
+    "domain5": 0,
+    "total_score": 0,
+    "interpretation": "Highly unlikely"
+  },
+  "non_dili_evidence": {
+    "livertox_category": "B",
+    "missing_IgM_anti_HAV": true,
+    "missing_IgM_anti_HBc": true,
+    "missing_anti_HCV": true,
+    "missing_HCV_RNA": true,
+    "missing_IgM_anti_HEV": true,
+    "standard_drinks_per_day": 0,
+    "missing_image_biliary_or_parenchymal_disease": true,
+    "is_minocycline_or_nitrofurantion_case": false,
+    "missing_ischemic_liver_injury_data": true,
+    "missing_sepsis": true,
+    "missing_IgM_anti_CMV": true,
+    "missing_IgM_anti_EBV": true,
+    "missing_IgM_anti_HSV": true,
+    "DRESS_or_SJS": false
+  }
+}

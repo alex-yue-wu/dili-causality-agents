@@ -1,0 +1,53 @@
+{
+  "recam_assessment": {
+    "total_score": 6,
+    "causality_level": "Probable",
+    "domain_scores": {
+      "domain_1_time_to_onset": {
+        "score": 2,
+        "reasoning": "Onset of symptoms occurred after 60 days of starting tofacitinib, which falls within the '5-90 days' window for a +2 score."
+      },
+      "domain_2_course_of_injury": {
+        "score": 2,
+        "reasoning": "Liver function tests returned to normal within 2 months (approximately 60 days) of drug discontinuation. This meets the criteria for 'ALT/AST decrease ≥50% from peak in ≤60 days' for a +2 score."
+      },
+      "domain_3_risk_factors": {
+        "score": 0,
+        "reasoning": "Patient is 18 years old and has no history of alcohol consumption. No points are added or subtracted."
+      },
+      "domain_4_concomitant_medications": {
+        "score": 0,
+        "reasoning": "No concomitant medications were reported."
+      },
+      "domain_5_alternative_causes": {
+        "score": 0,
+        "reasoning": "Major alternative causes were ruled out: Hepatitis A, B, and C serologies were negative; autoimmune markers (ANA, ASMA) were negative; abdominal ultrasonography was normal, ruling out biliary obstruction. No points are subtracted."
+      },
+      "domain_6_previous_information": {
+        "score": 2,
+        "reasoning": "Tofacitinib is a known hepatotoxin, listed on LiverTox with a likelihood score of 'B'. This corresponds to 'Hepatotoxicity is listed in the product information' for a +2 score."
+      },
+      "domain_7_re_exposure": {
+        "score": 0,
+        "reasoning": "No re-exposure to tofacitinib was performed."
+      }
+    }
+  },
+  "non_dili_evidence": {
+    "summary": "While the RECAM score indicates a probable causality, the diagnosis could be strengthened by further excluding other potential causes.",
+    "details": [
+      {
+        "evidence_type": "Missing Viral Serologies",
+        "description": "The case report does not mention testing for Hepatitis E Virus (HEV), Cytomegalovirus (CMV), Epstein-Barr Virus (EBV), or Herpes Simplex Virus (HSV), which are potential, albeit less common, causes of acute hepatitis."
+      },
+      {
+        "evidence_type": "No Liver Biopsy",
+        "description": "A liver biopsy was not performed. Histological examination could have provided definitive evidence for drug-induced liver injury and conclusively ruled out other conditions like autoimmune hepatitis or other underlying liver diseases."
+      },
+      {
+        "evidence_type": "Incomplete Laboratory Follow-up Data",
+        "description": "Specific data on the rate of decline for alkaline phosphatase (ALP) and total bilirubin are not provided in the case report."
+      }
+    ]
+  }
+}

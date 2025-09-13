@@ -1,0 +1,73 @@
+{
+  "causality_assessment": {
+    "method": "RECAM",
+    "drug_name": "tofacitinib",
+    "case_summary": {
+      "patient": "female",
+      "onset_timing": "120 days after drug initiation",
+      "liver_injury_pattern": "hepatocellular (R-value = 6.49)",
+      "severity": "severe with jaundice (bilirubin 16.4 mg/dL)",
+      "recovery": "rapid improvement after drug discontinuation"
+    },
+    "recam_domain_analysis": {
+      "domain_1_temporal_relationship": {
+        "score": 2,
+        "rationale": "Onset at 120 days falls within acceptable timeframe for hepatocellular injury (5-90 days gets higher score, but 120 days still plausible)"
+      },
+      "domain_2_course_after_stopping": {
+        "score": 3,
+        "rationale": "Excellent dechallenge response - ALT declined 50% in 10 days after stopping drug, indicating strong temporal relationship"
+      },
+      "domain_3_risk_factors": {
+        "score": 1,
+        "rationale": "Female sex, no significant alcohol use, tofacitinib has known hepatotoxicity potential (LiverTox category E)"
+      },
+      "domain_4_concomitant_drugs": {
+        "score": 0,
+        "rationale": "No information provided about concomitant medications"
+      },
+      "domain_5_alternative_causes": {
+        "score": 2,
+        "rationale": "Comprehensive workup negative for HAV, HBV, HCV (though HCV RNA missing), HEV testing missing but low risk, no evidence of autoimmune hepatitis, ischemic injury, or sepsis. Liver biopsy showed findings specific for DILI"
+      }
+    },
+    "total_recam_score": 8,
+    "causality_category": "Probable DILI",
+    "score_interpretation": {
+      "range": "6-8 points",
+      "category": "Probable",
+      "confidence": "High probability that tofacitinib caused the liver injury"
+    }
+  },
+  "non_dili_evidence": {
+    "viral_hepatitis": {
+      "HAV": "Negative IgM anti-HAV",
+      "HBV": "Negative HBsAg and IgM anti-HBc", 
+      "HCV": "Negative anti-HCV, HCV RNA not tested",
+      "HEV": "Not tested (missing data)",
+      "CMV": "Not tested (missing data)",
+      "EBV": "Not tested (missing data)",
+      "HSV": "Not tested (missing data)"
+    },
+    "autoimmune_hepatitis": {
+      "ANA": "Not tested",
+      "ASMA": "Not tested", 
+      "IgG": "Not tested",
+      "assessment": "No evidence of autoimmune hepatitis based on available data"
+    },
+    "other_causes": {
+      "alcohol": "Minimal consumption (0 standard drinks/day)",
+      "ischemic_injury": "No evidence (missing data but no clinical suspicion)",
+      "sepsis": "No evidence (missing data but no clinical suspicion)",
+      "biliary_obstruction": "No evidence on imaging",
+      "malignant_infiltration": "Less than 50% infiltration"
+    },
+    "rechallenge": "Not performed",
+    "liver_biopsy": "Showed findings specific for DILI, no evidence of other liver diseases"
+  },
+  "clinical_significance": {
+    "severity": "Severe hepatocellular injury with jaundice",
+    "outcome": "Favorable recovery after drug discontinuation",
+    "recommendation": "Avoid future use of tofacitinib in this patient"
+  }
+}

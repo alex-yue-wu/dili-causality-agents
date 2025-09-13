@@ -1,0 +1,32 @@
+{
+  "RECAM_Score": 6,
+  "Causality_Assessment": "Probable",
+  "Domain_Scores": {
+    "Domain_1_Temporal_Relationship": 2,
+    "Domain_2_Risk_Factors": 0,
+    "Domain_3_Clinical_Course": 1,
+    "Domain_4_Concomitant_Drugs": 0,
+    "Domain_5_Exclusion_of_Alternative_Causes": 3
+  },
+  "Non_DILI_Evidence": {
+    "Viral_Hepatitis": "Excluded (negative serology for HAV, HBV, HCV)",
+    "Alcohol": "Excluded (0 standard drinks per day)",
+    "Biliary_Obstruction": "Excluded (imaging negative)",
+    "Autoimmune_Hepatitis": "No evidence (negative ANA, ASMA, IgG)",
+    "Ischemic_Hepatitis": "No evidence",
+    "Sepsis": "No evidence",
+    "Other_Viral_Infections": "No evidence (CMV, EBV, HSV negative or not tested)",
+    "Malignant_Infiltration": "Excluded (<50% malignant infiltration)"
+  },
+  "Supporting_Evidence": {
+    "Hepatocellular_Pattern": "R-value = 7.23 (ALT/ALP ratio > 5)",
+    "Temporal_Relationship": "Onset 120 days after start, 3 days after stop",
+    "Drug_Category": "Category E (known hepatotoxic drug)",
+    "Demographics": "Female patient"
+  },
+  "Limitations": {
+    "Missing_Data": "HCV RNA not tested, HEV IgM not tested, CMV/EBV/HSV IgM not tested",
+    "Dechallenge_Response": "No data on liver enzyme decline after drug cessation",
+    "Rechallenge": "No rechallenge data available"
+  }
+}

@@ -1,0 +1,72 @@
+information_extraction_task:
+  description: >
+    Conduct a thorough analysis of the input data in {input_pdf}.
+    Make sure you covered all the key information {key_info} for {algorithm}-based causality assessment 
+    of DILI.
+    For each key information, please extract the information and store it in a key-value pair in the 
+    json format. If you cannot find the information, please leave the value as None. If the unit is 
+    different from the key information, please convert the unit to the unit in the key information.
+    Confirm the drug name is the generic name by searching the drug name in the internet. To get the 
+    LiverTox category, you can search the drug generic name in the LiverTox website 
+    (https://www.ncbi.nlm.nih.gov/books/NBK547852/).
+  expected_output: >
+    Information extracted from the input data in json format.
+  output_file: "{output_dir}/{algorithm}_{date}/dili_information.json"
+
+causality_scoring_task:
+  description: >
+    Perform {algorithm}-based causality assessment of DILI based on the information extracted by the 
+    DILI informatician.
+    Make sure you use the score calculator tool {score_calculator_tool} to perform the {algorithm}-based 
+    causality assessment.
+  expected_output: >
+    Causality scores and non-DILI evidence in json format.
+  context: [information_extraction_task]
+  output_file: "{output_dir}/{algorithm}_{date}/dili_scores.json"
+
+report_writing_task:
+  description: >
+    Write a report on the causality assessment of DILI based on the findings and the evidence supporting
+    the findings and the conclusion on causality. The report should be dated {date}.
+    Follow the guidelines (listed below) to format the report into a professional markdown document.
+    1. Use proper markdown headers (#, ##, ###)
+    2. Format key findings and insights as bullet points
+    3. Add proper spacing and sections breaks
+    4. Make recommendations stand out using blockquotes
+    5. Ensure the date is properly formatted
+    6. Add a table of contents at the beginning
+    7. Use horizontal rules (---) to separate major sections
+    8. Add inline citations for each major claim using (Author, Year) format
+    9. Include a Sources section at the end with numbered references
+    10. Each source should include title, publisher/author, and URL
+    11. Link inline citations to the corresponding entry in the Sources section
+  expected_output: >
+    A formatted markdown report on the causality assessment of DILI in markdown format with proper 
+    structure, spacing, citations, and visual elements that enhance readability and presentation.
+  context: [information_extraction_task, causality_scoring_task]
+  output_file: "{output_dir}/{algorithm}_{date}/dili_assessment_report.md"
+
+expert_review_task:
+  description: >
+    Review the report on the {algorithm}-based causality assessment of DILI and provide a final concise
+    summary and conclusion on the causality assessment of DILI. The report should be dated {date}.
+    If the findings are not consistent, suggest the next steps for the causality assessment of DILI.
+    Follow these guidelines to format the report into a professional markdown document:
+    1. Use proper markdown headers (#, ##, ###)
+    2. Format key findings and insights as bullet points
+    3. Add proper spacing and sections breaks
+    4. Make recommendations stand out using blockquotes
+    5. Ensure the date is properly formatted
+    6. Add a table of contents at the beginning
+    7. Use horizontal rules (---) to separate major sections
+    8. Add inline citations for each major claim using (Author, Year) format
+    9. Include a Sources section at the end with numbered references
+    10. Each source should include title, publisher/author, and URL
+    11. Link inline citations to the corresponding entry in the Sources section
+  expected_output: >
+    A formatted markdown report including final summary and conclusion from the DILI expert review
+    with proper structure, spacing, citations, and visual elements that enhance readability and 
+    presentation.
+  context:
+    [information_extraction_task, causality_scoring_task, report_writing_task]
+  output_file: "{output_dir}/{algorithm}_{date}/diliexpert_review_report.md"

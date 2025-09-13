@@ -1,0 +1,25 @@
+{
+    "error": "RECAM causality assessment cannot be computed due to insufficient data. Critical missing inputs include: liver enzyme values (ALT, ALP, AST, baseline values), time to onset, dechallenge/rechallenge data, and biopsy/virology/autoimmune markers. All scores are indeterminate.",
+    "non_dili_evidence": {
+        "missing_IgM_anti_HAV": true,
+        "missing_IgM_anti_HBc": true,
+        "missing_anti_HCV": true,
+        "missing_HCV_RNA": true,
+        "missing_IgM_anti_HEV": true,
+        "missing_image_biliary_or_parenchymal_disease": true,
+        "missing_ischemic_liver_injury_data": true,
+        "missing_sepsis": true,
+        "missing_IgM_anti_CMV": true,
+        "missing_IgM_anti_EBV": true,
+        "missing_IgM_anti_HSV": true
+    },
+    "recam_scores": {
+        "domain_1_score": null,
+        "domain_2_score": null,
+        "domain_3_score": null,
+        "domain_4_score": null,
+        "domain_5_score": null,
+        "total_score": null,
+        "causality_category": "Indeterminate"
+    }
+}

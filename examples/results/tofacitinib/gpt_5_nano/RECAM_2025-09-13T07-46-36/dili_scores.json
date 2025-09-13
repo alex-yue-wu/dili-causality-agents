@@ -1,0 +1,21 @@
+{
+  "recam_causality": {
+    "domain_scores": {
+      "Domain 1 (Temporal relationship)": 2,
+      "Domain 2 (Dechallenge/Rechallenge)": 0,
+      "Domain 3 (Alternative causes)": 0,
+      "Domain 4 (Pattern of injury)": 2,
+      "Domain 5 (Other considerations)": 0
+    },
+    "total_recams_score": 4,
+    "interpretation": "Possible DILI with moderate likelihood given hepatocellular pattern and timing, but data are incomplete for exclusion of other etiologies."
+  },
+  "non_dili_evidence": [
+    "Viral hepatitis serologies (HBsAg, anti-HCV, HCV RNA, IgM anti-HAV/HBV, IgM anti-HEV, EBV, CMV, HSV) largely missing, preventing exclusion of infectious etiologies.",
+    "Ischemic liver injury data missing; sepsis data missing; ischemic injury cannot be ruled out.",
+    "Autoimmune workup (ANA, ASMA, IgG) largely missing; autoimmune hepatitis not excluded.",
+    "Rechallenge data not available; no documented dechallenge/rechallenge response.",
+    "No liver biopsy results available to distinguish DILI from other etiologies.",
+    "High ALT/AST with marked bilirubin could be compatible with DILI but non-DILI causes not definitively excluded."
+  ]
+}

@@ -1,0 +1,13 @@
+[project]
+name = "dili-causality-agents"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "crewai[tools]>=0.177.0",
+    "langchain-community>=0.3.29",
+    "pydantic>=2.11.7",
+    "pypdf>=5.9.0",
+    "python-dotenv>=1.1.1",
+]

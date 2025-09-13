@@ -1,0 +1,78 @@
+{
+  "drug": "tofacitinib",
+  "recam_results": {
+    "input_assumptions": {
+      "r_value_method": "R = (ALT/40) / (ALP/120)",
+      "computed_r_value": 4.91,
+      "phenotype_interpretation": "Mixed (2 < R < 5)",
+      "note_on_missing_data": "Missing serologies/imaging/decline kinetics were flagged with corresponding 'missing_' booleans set to true; results set to false so the calculator can ignore them per its logic. Onset after start not provided; set to 0 days to avoid inflating latency points."
+    },
+    "scores": {
+      "domain_1": null,
+      "domain_2": null,
+      "domain_3": null,
+      "domain_4": null,
+      "domain_5": null,
+      "total_score": null
+    }
+  },
+  "non_dili_evidence": {
+    "viral_hepatitis_A": {
+      "missing_IgM_anti_HAV": true,
+      "IgM_anti_HAV": false
+    },
+    "viral_hepatitis_B": {
+      "missing_IgM_anti_HBc": true,
+      "HBsAg": false,
+      "IgM_anti_HBc": false
+    },
+    "viral_hepatitis_C": {
+      "missing_anti_HCV": true,
+      "missing_HCV_RNA": true,
+      "anti_HCV": false,
+      "HCV_RNA": false,
+      "chronic_HCV": false,
+      "HCV_risk_100d_before_onset": false
+    },
+    "viral_hepatitis_E": {
+      "missing_IgM_anti_HEV": true,
+      "IgM_anti_HEV": false
+    },
+    "other_viral_infections": {
+      "CMV": { "missing_IgM_anti_CMV": true, "IgM_anti_CMV": false, "CMV_DNA": false },
+      "EBV": { "missing_IgM_anti_EBV": true, "IgM_anti_EBV": false, "EBV_DNA": false },
+      "HSV": { "missing_IgM_anti_HSV": true, "IgM_anti_HSV": false, "HSV_DNA": false }
+    },
+    "ischemic_injury": {
+      "missing_ischemic_liver_injury_data": true,
+      "ischemic_liver_injury_1w_before_onset": false
+    },
+    "sepsis": {
+      "missing_sepsis": true,
+      "sepsis": false
+    },
+    "imaging": {
+      "missing_image_biliary_or_parenchymal_disease": true,
+      "biliary_steuosis_or_obstruction": false,
+      "less_than_50pct_malignant_infiltration": false
+    },
+    "autoimmune_hepatitis_markers": {
+      "ANA_autoimmune_hepatitis": null,
+      "ASMA_autoimmune_hepatitis": null,
+      "IgG_autoimmune_hepatitis": null
+    },
+    "alcohol_use": { "standard_drinks_per_day": 0 },
+    "DRESS_or_SJS": false,
+    "biopsy": {
+      "liver_biopsy_specific_dili": false,
+      "liver_biopsy_non_dili": false
+    },
+    "rechallenge": {
+      "rechallenge_data": false,
+      "rechallenge_ast_alt_elevation": false,
+      "rechallenge_alp_elevation": false,
+      "rechallenge_no_ast_alt_elevation": false,
+      "rechallenge_no_alp_elevation": false
+    }
+  }
+}

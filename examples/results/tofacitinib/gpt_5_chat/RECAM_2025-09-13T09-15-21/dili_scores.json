@@ -1,0 +1,20 @@
+{
+  "Causality_scores": {
+    "Domain 1: Onset Timing": 2,
+    "Domain 2: Course After Stopping": 3,
+    "Domain 3: Risk Factors and Competing Causes": 3,
+    "Domain 4: Drug's Known Potential": 0,
+    "Domain 5: Previous Information / Rechallenge / Biopsy": 0,
+    "Total RECAM Score": 8,
+    "Causality Category": "Probable DILI"
+  },
+  "Non_DILI_evidence": {
+    "Viral_hepatitis_excluded": true,
+    "Alcohol_use": false,
+    "Biliary_obstruction": false,
+    "Ischemic_injury": false,
+    "Sepsis": false,
+    "Autoimmune_Hepatitis_strongly_supported": false,
+    "Malignancy_infiltration": false
+  }
+}
