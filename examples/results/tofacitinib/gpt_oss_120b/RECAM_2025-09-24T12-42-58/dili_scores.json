@@ -1,0 +1,20 @@
+{
+  "RECAM": {
+    "Domain1": 0,
+    "Domain2": 0,
+    "Domain3": 0,
+    "Domain4": 0,
+    "Domain5": 0,
+    "Total": 0
+  },
+  "NonDILI_Evidence": {
+    "summary": "No strong non-DILI evidence identified from available data. Viral serology data largely missing; sepsis ruled out; no alternative hepatic injury documented in the provided data.",
+    "notes": [
+      "Missing hepatitis A/B/C/HeV/HHSV serologies limit exclusion of infectious etiologies.",
+      "Sepsis data not supported by clinical evidence (sepsis = false).",
+      "No ischemic liver injury data available (missing_ischemic_liver_injury_data = true).",
+      "No autoimmune hepatitis markers available (ANA/ASMA/IgG all null).",
+      "Rechallenge data negative; DRESS/SJS absent."
+    ]
+  }
+}
